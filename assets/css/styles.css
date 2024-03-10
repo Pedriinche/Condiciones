@@ -1,0 +1,46 @@
+.foto{
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+}
+h4{
+display: flex;
+justify-content: center;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verificar{
+display: flex;
+justify-content:center;
+gap: 10px;
+}
+
+img{
+    height: 200px;
+    width: 200px;
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+.selects{
+    display: flex;
+    justify-content: center;
+}
+
+.boton-2{
+    display: flex;
+    justify-content: center;
+}

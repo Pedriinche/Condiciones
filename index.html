@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio2 JavaScript</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+<div>
+    <img class="foto" src="assets/img/iphone.jpg" alt="Iphone" onclick="
+     foto= document.querySelector('.foto')
+     if(activo===false){
+        foto.style.borderColor='red'
+        activo=true
+     }else{
+        foto.style.borderColor='white'
+        activo=false
+     } ">
+</div>
+
+
+<div class="stickers">
+    <h4>Puedes llevar hasta 10 stickers</h4>
+
+    <div class="box">
+      <img src="./assets/img/chibi.jpg" alt="" />
+      <input type="text" id="sticker1"/>
+      <p>Ingresa una cantidad</p>
+      
+    </div>
+    <div class="box">
+      <img src="./assets/img/gojo.jpg" alt="" />
+      <input type="text" id="sticker2"/>
+      <p>Ingresa una cantidad</p>
+    </div>
+    <div class="box">
+      <img src="./assets/img/finn.jpg" alt="" />
+      <input type="text" id="sticker3" />
+      <p>Ingresa una cantidad</p>
+    </div>
+
+    <div class="verificar">
+      <p id="cantidad1"></p>
+      <button onclick="
+      sticker1 = document.querySelector('#sticker1').value
+      sticker2 = document.querySelector('#sticker2').value
+      sticker3 = document.querySelector('#sticker3').value
+      total = (Number(sticker1) + Number(sticker2) + Number(sticker3))
+      cantidad = document.querySelector('#cantidad1')
+      if(Number(total === 10)){
+        cantidad.innerHTML= 'Llevas  exactamente 10 stickers'
+      } else if (total > 1 && total < 10) {
+        cantidad.innerHTML= 'Aun faltan sticker por llevar'
+      } else{
+        cantidad.innerHTML=  'El Limite es 10 Sticker, Sorry'
+      }
+
+      ">verificar</button>
+    </div>
+  </div>
+
+
+  <div class="box2">
+
+    <h2>Ingrese el Password</h2>
+
+    <div class="selects">
+      
+      <select name="" id="select1">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+
+      </select>
+      <select name="" id="select2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+
+        </select>
+        <select name="" id="select3">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+
+        </select>
+    </div>
+
+    <div class="boton-2">
+        <button onclick="
+        select1 = document.querySelector('#select1').value
+        select2 = document.querySelector('#select2').value
+        select3 = document.querySelector('#select3').value
+        total = (select1 + select2 + select3)
+        password= document.querySelector('#password')
+
+        if (total == '9'+'1'+'1'){
+          password.innerHTML= 'Password 1 es Correcto'
+        } else if ( total == '7'+'1'+'4'){
+          password.innerHTML= 'Password 2 es Correcto'
+        } else {
+          password,innerHTML= 'Password es incorrecto'
+        }
+                           
+          
+          ">Ingresar</button>
+      </div>
+      <div>
+        <p id="password"></p>
+    </div>
+  </div>
+
+
+
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
